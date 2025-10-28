@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey - Page 1</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2cxxxxxxff.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container mt-5">
+  <h1>Tell Us About You</h1>
+
+  <form>
+    <!-- Input box -->
+    <div class="mb-3">
+      <label for="fullname" class="form-label">Full Name:</label>
+      <input id="fullname" name="fullname" type="text" class="form-control" required autofocus>
+    </div>
+
+    <!-- Radio buttons -->
+    <p>
+      Gender identity
+      <span class="tooltip">
+        <i class="fa-solid fa-circle-info fontawesome"></i>
+        <span class="tooltiptext">
+          Letting us know how you identify yourself helps us measure and enhance diversity and inclusivity in tech by addressing historical gender imbalances.
+        </span>
+      </span>
+    </p>
+
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+      <label class="form-check-label" for="male">Male</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+      <label class="form-check-label" for="female">Female</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="nonbinary" value="nonbinary">
+      <label class="form-check-label" for="nonbinary">Non-binary / prefer not to say</label>
+    </div>
+
+    <button class="btn btn-primary mt-4" type="button" onclick="window.location.href='confirmation.html';">Next</button>
+
+  </form>
+</body>
+</html>
