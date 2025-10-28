@@ -12,7 +12,7 @@
   <script src="https://kit.fontawesome.com/443169707e.js" crossorigin="anonymous"></script>
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body class="container mt-5">
@@ -28,9 +28,9 @@
     <!-- Radio buttons with tooltip -->
     <p>
       Gender identity
-      <span class="tooltip">
-        <i class="fa-solid fa-circle-info fontawesome"></i>
-        <span class="tooltiptext">
+      <span class="tooltip" tabindex="0">
+        <i class="fa-solid fa-circle-info fontawesome" aria-hidden="true"></i>
+        <span class="tooltiptext" role="tooltip">
           Letting us know how you identify yourself helps us measure and enhance diversity and inclusivity in tech by addressing historical gender imbalances.
         </span>
       </span>
@@ -49,7 +49,9 @@
       <label class="form-check-label" for="nonbinary">Non-binary / prefer not to say</label>
     </div>
 
-    <button class="btn btn-primary mt-4" type="button" onclick="window.location.href='confirmation.html';">Next</button>
+    <button class="btn btn-primary mt-4" type="button" onclick="window.location.href='confirmation.html';">
+      Next
+    </button>
   </form>
 </body>
 </html>
